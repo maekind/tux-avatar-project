@@ -1,0 +1,28 @@
+name: Generate assets json file
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Python configuration
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x
+
+    - name: Exceute python script
+      run: python generate_assets.py
+
+    - name: Install lftp
+      run: sudo apt-get update && sudo apt-get install -y lftp
+
+    - name: Send file by ftp to hosting
+      run: lftp -c "open -u ${{ secrets.TUX_FTP_USERNAME }},${{ secrets.TUX_FTP_PASSWORD }} ftp://${{ secrets.TUX_FTP_DOMAIN }};cd ${{ secrets.TUX_FTP_FOLDER }}; put urls.json"
