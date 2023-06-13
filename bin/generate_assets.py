@@ -7,6 +7,14 @@ import argparse
 import json
 import os
 
+__author__ = "Marco Espinosa"
+__email__ = "marco@marcoespinosa.es"
+__date__ = "13/06/2023"
+__version__ = "1.0"
+__development__ = False
+
+__application_name__ = "Assets builder"
+
 def walk(root):
     """ Method to walk throught the given folder """
     files = []
@@ -24,7 +32,7 @@ def walk(root):
 def get_arguments():  # pragma: no cover
     """ Method to retrieve application arguments """
     # Configure arguments
-    parser = argparse.ArgumentParser(description="Assets builder")
+    parser = argparse.ArgumentParser(description=__application_name__)
     parser.add_argument('-v',
                         '--verbose',
                         help="Set verbose option",
