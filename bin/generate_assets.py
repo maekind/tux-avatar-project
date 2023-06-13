@@ -3,6 +3,7 @@
 
 """ File that generates the assets file """
 
+import argparse
 import json
 import os
 
@@ -20,14 +21,38 @@ def walk(root):
 
     return files
 
+def get_arguments():  # pragma: no cover
+    """ Method to retrieve application arguments """
+    # Configure arguments
+    parser = argparse.ArgumentParser(description="Assets builder")
+    parser.add_argument('-v',
+                        '--verbose',
+                        help="Set verbose option",
+                        dest="verbose",
+                        required=False,
+                        action='store_true')
+    parser.add_argument('-p',
+                        '--path',
+                        help="Path to images folder",
+                        dest='path',
+                        metavar='STRING',
+                        required=True)
+
+    return parser
+
 def main():
     """ Main method """
 
-    extensions = ['png', 'jpg']
+    # Only png images are allowed
+    extensions = ['png']
 
-    filenames = walk('.')
+    # Get application arguments
+    parser = get_arguments()
+    args = parser.parse_args()
 
-    base_url = "https://img.tux-avatar.com/"
+    filenames = walk(args.path)
+
+    base_url = "https://raw.githubusercontent.com/maekind/tux-avatar-project/main/"
     json_files = []
 
     for filename in sorted(filenames):
