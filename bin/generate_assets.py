@@ -6,11 +6,12 @@
 import argparse
 import json
 import os
+from urllib.parse import quote
 
 __author__ = "Marco Espinosa"
 __email__ = "marco@marcoespinosa.es"
-__date__ = "13/06/2023"
-__version__ = "1.0"
+__date__ = "14/06/2023"
+__version__ = "1.1"
 __development__ = False
 
 __application_name__ = "Assets builder"
@@ -65,7 +66,7 @@ def main():
 
     for filename in sorted(filenames):
         if [ extension for extension in extensions if extension in filename]:
-            json_files.append({ 'name': filename, 'url': base_url + filename })
+            json_files.append({ 'name': filename, 'url': quote(base_url + filename, safe=':/') })
 
     json_file = 'urls.json'
     with open(json_file, 'w') as f:
