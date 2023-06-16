@@ -19,7 +19,7 @@ jobs:
         python-version: 3.x
 
     - name: Exceute python script
-      run: python ./bin/generate_assets.py -p $(pwd)
+      run: python ./bin/generate_assets.py -p ./images
 
     - name: Install lftp
       run: sudo apt-get update && sudo apt-get install -y lftp
