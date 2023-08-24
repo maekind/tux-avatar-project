@@ -2,14 +2,18 @@
 <p align="center">
   <img width="400" height="400" src="./logo.png">
 </p>
-
+<br /><br /><br />
 <!-- Shields -->
-[![licence](https://img.shields.io/badge/license-CCO%201.0%20Universal-orange.svg)](https://github.com/maekind/tux-avatar-project/blob/main/LICENSE)
-[![images](https://img.shields.io/github/directory-file-count/maekind/tux-avatar-project%2Fimages?type=file&label=images&color=green
-)](https://github.com/maekind/tux-avatar-project/tree/ce548e2da3e5741da4bd6f72e0761e7ee75cedfd/images)
-[![repo size](https://img.shields.io/github/repo-size/maekind/tux-avatar-project)
-](https://github.com/maekind/tux-avatar-project)
-[![last_commit](https://img.shields.io/github/last-commit/maekind/tux-avatar-project?color=violet)](https://github.com/maekind/tux-avatar-project)
+<p align="center">
+  <!-- licence -->
+  <a href="https://github.com/maekind/tux-avatar-project/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-CCO%201.0%20Universal-orange.svg" hspace="5"></a>
+  <!-- images -->
+  <a href="https://github.com/maekind/tux-avatar-project/tree/ce548e2da3e5741da4bd6f72e0761e7ee75cedfd/images"><img src="https://img.shields.io/github/directory-file-count/maekind/tux-avatar-project%2Fimages?type=file&label=images&color=green" hspace="5" /></a>
+  <!-- repo size -->
+  <a href="https://github.com/maekind/tux-avatar-project"><img src="https://img.shields.io/github/repo-size/maekind/tux-avatar-project" hspace="5"></a>
+  <!-- last commit -->
+  <a href="https://github.com/maekind/tux-avatar-project"><img src="https://img.shields.io/github/last-commit/maekind/tux-avatar-project?color=violet" hspace="5"></a>
+</P>
 
 # Tux avatar's project
 
@@ -40,6 +44,24 @@ New images are absolutely well coming, so it is the purpose of the repository. A
 ## Automation
 
 When a new image is loaded or deleted or even renaming, and the pull request is merged with the main branch, there is a *github action* raised to generate the file **urls.json** and afterwards upload it to the website hosting. Thus, the website content will always be up to date.
+
+## Donate
+
+Of course, the project generates some costs like:
+
+- Website hosting bill.
+- Domain annual price.
+- And the last but not least, my own time 🤓.
+
+But, if we focus on the first 2 recurrent costs and you would like to support this work, you can contribute buying me a ko-fi by clicking on the following button:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K7O6UWZ)
+
+Thank you!
+
+## References
+
+1. [https://en.wikipedia.org/wiki/Tux_(mascot)](https://en.wikipedia.org/wiki/Tux_(mascot))
 
 ## Contributors
 
