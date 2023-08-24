@@ -55,7 +55,10 @@ Of course, the project generates some costs like:
 
 But, if we focus on the first 2 recurrent costs and you would like to support this work, you can contribute buying me a ko-fi by clicking on the following button:
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K7O6UWZ)
+<p align="center">
+  <!-- ko-fi -->
+  <a href="https://ko-fi.com/K3K7O6UWZ"><img src="https://ko-fi.com/img/githubbutton_sm.svg" hspace="5"></a>
+</p>
 
 Thank you!
 
