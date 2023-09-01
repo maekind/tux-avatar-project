@@ -13,6 +13,8 @@
   <a href="https://github.com/maekind/tux-avatar-project"><img src="https://img.shields.io/github/repo-size/maekind/tux-avatar-project" hspace="5"></a>
   <!-- last commit -->
   <a href="https://github.com/maekind/tux-avatar-project"><img src="https://img.shields.io/github/last-commit/maekind/tux-avatar-project?color=violet" hspace="5"></a>
+  <!-- Urls file generation -->
+  <a href="https://github.com/maekind/tux-avatar-project/actions/workflows/genassestsfile.yaml"><img src="https://github.com/maekind/tux-avatar-project/actions/workflows/genassestsfile.yaml/badge.svg?branch=main" hspace="5"></a>
 </P>
 
 # Tux avatar's project
